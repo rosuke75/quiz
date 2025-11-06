@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:menu_drawer/generador.dart';
 import 'package:menu_drawer/quiz_page.dart';
 import 'inicio.dart';
 import 'configuraciones.dart';
 import 'buscar.dart';
 import 'historial.dart';
-import 'quiz_page.dart'; // ✅ Importa tu pantalla de quiz
+
 
 class Navbar extends StatelessWidget {
   const Navbar({super.key});
@@ -97,6 +98,12 @@ class Navbar extends StatelessWidget {
                       context,
                       const QuizPage(),
                     ), // ✅ Aquí se abre el quiz
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.qr_code),
+                    title: const Text('Generador QR'),
+                    onTap: () =>
+                        _navigateTo(context,QRHomePage()),
                   ),
                 ],
               ),

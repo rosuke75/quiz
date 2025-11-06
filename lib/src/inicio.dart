@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:menu_drawer/quiz_page.dart';
 import 'navbar.dart';
-import 'quiz_page.dart'; 
+
 
 class InicioPage extends StatelessWidget {
   const InicioPage({super.key});

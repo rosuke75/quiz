@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:menu_drawer/src/inicio.dart';
-import 'inicio.dart'; // Asegúrate de tener esta pantalla como inicio
+
 
 class ResultPage extends StatelessWidget {
   final int puntaje;
@@ -16,11 +16,11 @@ class ResultPage extends StatelessWidget {
   Widget build(BuildContext context) {
     String mensajeFinal;
     if (puntaje == total) {
-      mensajeFinal = '¡Perfecto! 🎉';
+      mensajeFinal = '¡Perfecto! ';
     } else if (puntaje >= total / 2) {
-      mensajeFinal = '¡Buen trabajo! 👍';
+      mensajeFinal = '¡Buen trabajo! ';
     } else {
-      mensajeFinal = 'Sigue practicando 💪';
+      mensajeFinal = 'Sigue practicando ';
     }
 
     return Scaffold(

@@ -5,7 +5,7 @@ import 'package:menu_drawer/src/inicio.dart';
 import 'package:menu_drawer/src/buscar.dart';
 import 'package:menu_drawer/src/historial.dart';
 import 'package:menu_drawer/src/configuraciones.dart';
-import 'package:menu_drawer/src/quiz_page.dart'; 
+
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         '/buscar': (context) => const BuscarPage(),
         '/historial': (context) => const HistorialPage(),
         '/configuracion': (context) => const ConfiguracionPage(),
-        '/quiz': (context) => const QuizPage(), // si usas la trivia
+        '/quiz': (context) => const QuizPage(), 
       },
     );
   }
